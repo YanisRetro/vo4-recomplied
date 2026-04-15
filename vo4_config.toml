@@ -4,7 +4,7 @@
 # See README.md for full configuration reference.
 
 project_name = "vo4"
-file_path = "D:/jeux consoles/jeux x360/Virtual-On Force/default.xex"
+file_path = "assets/default.xex"
 out_directory_path = "generated"
 
 setjmp_address = 0x82893080
