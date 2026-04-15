@@ -17,4 +17,4 @@ longjmp_address = 0x82892D60
 0x828B95D8 = { size = 0x8 }
 0x827048A8 = { size = 0x8 }
 0x828BC518 = { size = 0x8 }
-0x82878308 =  { name = "Function_82877200" }
+0x82878308 = { name = "Function_82877200" }
