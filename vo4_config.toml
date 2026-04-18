@@ -10,6 +10,25 @@ out_directory_path = "generated"
 setjmp_address = 0x82893080
 longjmp_address = 0x82892D60
 
+[rexcrt]
+
+RtlAllocateHeap = 0x827D5018
+RtlFreeHeap = 0x827D5910
+RtlSizeHeap = 0x827D4290
+RtlReAllocateHeap = 0x827D58C0
+CreateFileA = 0x827D1370
+ReadFile = 0x827D0DC0
+WriteFile = 0x827D0FE8
+SetFilePointer = 0x827D2DE8
+GetFileSize = 0x827D3148
+GetFileSizeEx = 0x827D20F8
+SetEndOfFile = 0x827D2D40
+FlushFileBuffers = 0x828A4CD0
+DeleteFileA = 0x827D2F58
+CloseHandle = 0x827D07C0
+strcpy_s = 0x82891528
+lstrcmpiA = 0x827D30B8
+
 [functions]
 
 0x827FA750 = { name = "Function_827F9B60" }
