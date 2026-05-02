@@ -7,15 +7,25 @@
 #pragma once
 
 #include <rex/rex_app.h>
+#include <timeapi.h>
+#pragma comment(lib, "winmm.lib")
 
 class Vo4App : public rex::ReXApp {
- public:
+public:
   using rex::ReXApp::ReXApp;
 
   static std::unique_ptr<rex::ui::WindowedApp> Create(
       rex::ui::WindowedAppContext& ctx) {
     return std::unique_ptr<Vo4App>(new Vo4App(ctx, "vo4",
         PPCImageConfig));
+  }
+
+  void OnPreSetup(rex::RuntimeConfig& config) override {
+    timeBeginPeriod(1);
+  }
+
+  void OnShutdown() override {
+    timeEndPeriod(1);
   }
 
   // Override virtual hooks for customization:
