@@ -26,6 +26,17 @@ SetEndOfFile = 0x827D2D40
 FlushFileBuffers = 0x828A4CD0
 DeleteFileA = 0x827D2F58
 CloseHandle = 0x827D07C0
+# memcpy = 0x8288D240 
+memmove = 0x8288D940
+memset = 0x8288DD30
+memchr = 0x8288D900
+XMemCpy = 0x827D18D8
+XMemSet = 0x827D23D8
+memcpy_s = 0x8288E138
+strncmp = 0x8288E1F0
+strncpy = 0x8288E4C8
+strstr = 0x8288E240
+strrchr = 0x82892830
 strcpy_s = 0x82891528
 lstrcmpiA = 0x827D30B8
 
